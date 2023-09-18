@@ -1,0 +1,72 @@
+{
+  "homepage": "https://github.com/pascalinecte91/HrNet_perso.git/#/",
+  "name": "hrnet",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.1",
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/user-event": "^13.5.0",
+    "banby-modal-customize-react": "^0.1.21",
+    "react": "^18.2.0",
+    "react-calendar": "^4.3.0",
+    "react-data-table-component": "^7.5.3",
+    "react-datepicker": "^4.15.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-modal": "^3.16.1",
+    "react-paginate": "^8.2.0",
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.14.0",
+    "react-scripts": "5.0.1",
+    "react-search-box": "^3.0.0",
+    "redux": "^4.2.1",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.63.6",
+    "styled-components": "^6.0.2",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test src/tests/pagination.test.js src/tests/employeeSearch.test.js",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "docs": "jsdoc src -d docs"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^6.0.1",
+    "@testing-library/react": "^14.0.0",
+    "babel-preset-react-app": "^10.0.1",
+    "gh-pages": "^5.0.0",
+    "http-server": "^14.1.1",
+    "jest": "^29.6.3",
+    "jsdoc": "^4.0.2",
+    "redux-mock-store": "^1.5.4"
+  }
+}

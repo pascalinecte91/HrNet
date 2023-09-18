@@ -1,0 +1,123 @@
+.form {
+  align-items: center;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50rem;
+  @include min-max($smartphone, $smartLarge ) {
+  height: 0;
+  }
+
+  &__card {
+    background-color: $greenLight;
+    border-radius: 5px;
+    padding: 10px 0px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__address {
+    border: none;
+    padding: 5px;
+  }
+
+  &__addressCenter {
+    text-align: center;
+    display: flex;
+  }
+
+  &__save {
+    background: linear-gradient(to right, #97ad9a, #087129);
+    background-color: #97ad9a;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid $greenButton;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    width: 6.25rem;
+    height: 2.188rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__save:hover {
+    background: linear-gradient(to right, #a4b7a7, #51865a);
+    background-color: #a4b7a7;
+    
+  }
+
+  &__save:active {
+    transform: scale(0.95);
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.input,
+.input_datepicker {
+  width: 36rem;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  @include min-max($smartphone, $smartLarge) {
+    width: 21.875rem;
+  }
+}
+
+#create_employee {
+  margin: 5px;
+  width: 36rem;
+  height: 80%;
+
+  @include min-max($smartphone, $smartLarge) {
+    width: 21.875rem;
+   
+  }
+}
+
+aside {
+  @include min-max($smartphone, $smartLarge) {
+    width: 21.875rem;
+  }
+}
+
+select option {
+  background-color: $greenLight;
+}
+
+select#state option {
+  width: 6.25rem;
+}
+.success-message {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+sc-eDvSVe .jifbFL {
+  @include min-max($desktop, $big-desktop){
+    width:270px;
+  }
+
+}

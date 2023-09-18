@@ -1,0 +1,50 @@
+$smartphone: 320px;
+$smartLarge: 525px;
+$miniTab: 624px;
+$tablet: 768px;
+$desktop: 1024px;
+$big-desktop: 1380px;
+$bigBig: 1441px;
+$SuperBig: 1660px;
+
+@mixin min-max($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin above-superBig {
+  @media only screen and (min-width: $SuperBig) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin bigbig {
+  @media only screen and (min-width: $bigBig) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin smartphone {
+  @media only screen and (max-width: $smartphone) {
+    @content;
+  }
+}
+
+// colors
+
+$green: #458846;
+$greenButton: #6f8f6f;
+$greenLight: rgb(221, 228, 221);

@@ -1,0 +1,42 @@
+/*** component React searchBox   ***/
+.sc-eDvSVe {
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  color: #000;
+  width: 100%;
+
+  @include min-max($smartphone, $smartLarge) {
+    padding: 10px 7px;
+  }
+}
+
+.search {
+  display: flex;
+}
+
+.search label {
+  font-size: 0.938rem;
+  color: green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include min-max($tablet, $desktop) {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  @include min-max($smartphone, $smartLarge) {
+    font-size: 11px;
+  }
+}
+
+input.dAZYal {
+  @include min-max($smartphone, $smartLarge) {
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+}

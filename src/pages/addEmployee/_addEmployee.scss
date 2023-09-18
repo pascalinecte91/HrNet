@@ -1,0 +1,35 @@
+.create {
+  width: 100%;
+  height: 90vh;
+  padding-bottom: 1.563;
+
+  @include min-max($smartphone, $smartLarge) {
+    height: 97vh;
+  }
+
+  &__wrapperForm {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 9.375rem;
+    margin: 0.938rem;
+  }
+
+  &__name,
+  &__title {
+    color: $green;
+
+    @include min-max($smartphone, $smartLarge) {
+      display: none;
+    }
+  }
+}

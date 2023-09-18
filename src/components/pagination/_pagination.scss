@@ -1,0 +1,73 @@
+.pagination {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  order: 2;
+  margin-left: 1.5rem;
+}
+
+.page-item a {
+  display: block;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.page-item:hover a {
+  background-color: $greenButton;
+}
+
+.active a {
+  background-color: #6f8f6f;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination-search {
+  display: flex;
+  align-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  @include min-max($tablet, $desktop -1) {
+    font-size: 3px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  &__toggle {
+    display: flex;
+    @include min-max($smartphone, $tablet) {
+      font-size: 15px;
+      display: none;
+    }
+    span {
+      font-size: 13px;
+    }
+  }
+  &__lot {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    @include min-max($desktop, $big-desktop) {
+      padding: 8px 6px;
+    }
+    @include min-max($smartphone, $smartLarge) {
+      font-size: 11px;
+    }
+  }
+
+  &__number {
+    @include min-max($smartphone, $smartLarge) {
+      display: none;
+    }
+  }
+}
+
+.page {
+  padding-left: 5px;
+  margin-left: 10px;
+}

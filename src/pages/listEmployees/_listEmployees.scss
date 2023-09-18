@@ -1,0 +1,70 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: $greenLight 0px 1px 2px, $greenLight 0px 2px 4px,
+    $greenLight 0px 4px 8px, $greenLight 0px 8px 16px;
+  width: 80vw;
+  margin: auto;
+  height: 200px;
+  margin-top: 20px;
+
+  @include min-max($smartphone, $smartLarge) {
+    font-size: 15px;
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  &__name,
+  &__title {
+    color: $green;
+  }
+
+  &__logo {
+    width: 200px;
+
+    @include min-max($smartphone, $smartLarge) {
+      width: 100px;
+    }
+  }
+
+  &__change {
+    display: flex;
+    align-items: center;
+  }
+
+  &__delete {
+    border: none;
+    color: white;
+    background-color: $greenLight;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 5%;
+    cursor: pointer;
+
+    @include min-max($smartphone, $smartLarge) {
+      display: none;
+    }
+  }
+  &__delete:hover {
+    background-color: $greenButton;
+  }
+}
+
+.grayed-trash {
+  color: #ccc; /* Couleur grise */
+  cursor: not-allowed; /* Curseur non autorisé */
+}
+
+.modal-title {
+  @include min-max($smartphone, $smartLarge) {
+    color: red !important;
+    font-size: 13px;
+    width: 400px !important;
+  }
+ 
+}
+

@@ -1,0 +1,66 @@
+// une bordure et des coins arrondis au calendrier
+.customCalendar {
+  box-shadow: 3px 3px 9px rgb(138, 139, 138);
+  border-radius: 5px;
+  width: 21.875rem;
+}
+// boutons du calendrier
+.customCalendar button {
+  border-radius: 3px;
+  margin: 2px;
+  color: $greenButton;
+  font-weight: bolder;
+
+}
+//coins tuiles du calendrier
+.customCalendar abbr {
+border-radius: 1px;
+  color: $green;
+  font-weight: bold;
+}
+//couleur de fond et la couleur du texte calendrier
+.customTile abbr {
+  color: $green;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days {
+  justify-content: space-around;
+}
+.react-calendar__navigation {
+  display: flex;
+}
+
+.react-calendar__tile--active {
+  background-color: $greenLight;
+}
+.react-calendar__tile--now {
+  background: rgb(198, 202, 202)
+}
+.input-container {
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+}
+
+.calendar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(131, 128, 128)
+}
+
+.react-calendar__year-view__months{
+  justify-content: space-around;
+}

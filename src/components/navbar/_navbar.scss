@@ -1,0 +1,43 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  background: #458846;
+  align-items: center;
+  font-size: 1.375rem;
+  height: 4.063rem;
+
+  @include min-max($smartphone, $smartLarge) {
+    font-size: 0.938rem;
+    justify-content: space-evenly;
+  }
+
+  @include min-max($smartLarge, $tablet) {
+    justify-content: space-evenly;
+  }
+
+  @include min-max($smartLarge, $desktop) {
+    font-size: 1.188rem;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-weight: 600;
+  }
+
+  &__link {
+    display: flex;
+    gap: 1.875rem;
+
+    @include min-max($smartphone, $smartLarge ) {
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link a:hover {
+    border-bottom: 2px solid #3a3a38;
+  }
+}

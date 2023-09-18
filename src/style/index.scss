@@ -1,0 +1,21 @@
+@import "style/mixins";
+@import "style/settings";
+
+/*** COMPONENTS ***/
+@import "components/navbar/navbar";
+@import "components/footer/footer";
+@import "components/form/form";
+@import "components/form/editForm";
+@import "components/datePicker/datepicker";
+@import "components/pagination/pagination";
+@import "components/search/employeeSearch";
+@import "components/customDataTable/custom";
+@import "components/spinner/spinner";
+/*** PAGES ***/
+@import "pages/home/home";
+@import "pages/addEmployee/addEmployee";
+@import "pages/listEmployees/listEmployees";
+@import "pages/notFound/notFound";
+
+
+

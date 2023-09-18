@@ -1,0 +1,200 @@
+.homePage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: center;
+  overflow-y: hidden;
+
+  &__current {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid $green;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f5f5f5;
+    overflow-y: visible;
+
+    @include min-max($smartLarge, $desktop) {
+      height: 52vh;
+    }
+
+    @include min-max($smartphone, $smartLarge) {
+      flex-direction: column;
+      border: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+
+    @include min-max($smartphone, $smartLarge) {
+      display: inherit;
+      gap: inherit;
+      padding-left: 10px;
+      height: 0;
+    }
+
+    @include min-max($tablet, $desktop) {
+      height: 70%;
+    }
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include min-max($smartphone, $smartLarge) {
+      margin-top: 3.125rem;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-size: 25px;
+    color: #666;
+    text-align: center;
+
+    @include min-max($smartphone, $smartLarge) {
+      font-size: 1.188rem;
+      display: none;
+    }
+
+    @include min-max($smartLarge, $desktop) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__greenSpan {
+    color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__empl {
+    font-size: 23px;
+    text-align: center;
+
+    @include min-max($smartphone, $tablet) {
+      font-size: 14px;
+    }
+  }
+
+  &__group img {
+    justify-content: center;
+    display: flex;
+    height: 5rem;
+    margin-top: 1.25rem;
+    max-width: 20%;
+    height: auto;
+
+    @include min-max($smartphone, $desktop) {
+      height: 3.75rem;
+    }
+
+    @include min-max($desktop, $big-desktop) {
+      max-width: 50%;
+    }
+
+    @include min-max($smartphone, $tablet) {
+      max-width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 2.813rem;
+
+    @include min-max($smartLarge, $desktop) {
+      font-size: 1.375rem;
+    }
+
+    @include min-max($desktop, $big-desktop) {
+      font-size: 1.875rem;
+    }
+
+    @include min-max($smartphone, $smartLarge) {
+      font-size: 0.938rem;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1.25rem;
+  gap: 8px;
+
+  &__add {
+    background-color: $greenButton;
+    color: white;
+    text-align: center;
+  }
+
+  &__view {
+    background-color: white;
+    color: $greenButton;
+    text-align: center;
+  }
+
+  &__view,
+  &__add {
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+    @include min-max($smartphone, $smartLarge) {
+      height: 1.875rem;
+    }
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(129, 134, 129);
+  box-shadow: 1px 2px rgb(142, 143, 140);
+  margin: 10px;
+  @include min-max($smartphone, $smartLarge) {
+    max-width: 70%;
+  }
+  @include min-max($tablet, $desktop) {
+    max-width: 30%;
+  }
+}
+img.image_logo,
+img.image {
+  width: 100%;
+}
+
+.no_scroll {
+  overflow-y: hidden;
+}

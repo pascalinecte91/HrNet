@@ -1,0 +1,46 @@
+[
+    {
+      "key": "alt+9 ",
+      "command": "multiCommand.makeRoom"
+    },
+    {
+      "key": "ctrl+d", //focus le mot , faire plusieurs fois prend la phrase○
+      "command": "editor.action.smartSelect.expand",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+d", //focus les mots identiques pour les modifications
+      "command": "editor.action.addSelectionToNextFindMatch",
+      "when": "editorFocus"
+    },
+    {
+      "key": "ctrl+p", // ouvre les commandes
+      "command": "workbench.action.showCommands",
+    },
+    {
+      "key": "ctrl+o",//ouvre les fichiers
+      "command": "workbench.action.quickOpen"
+    },
+    {
+      "key": "ctrl+shift+o",  // ouvre explorer pour voir ou se trouve le fichier
+      "command": "revealFileInOS"
+    },
+    {
+      "key": "ctrl+r",  // montre les symboles
+      "command": "workbench.action.gotoSymbol"
+    },
+    {
+      "key": "ctrl+n",  // creation de fichier
+      "command": "explorer.newFile"
+    },
+    {
+      "key": "ctrl+alt+i",  // formate tout le document
+      "command": "editor.action.formatDocument"
+    },
+    {
+      "key": "ctrl+t",  // open terminal
+      "command": "workbench.action.terminal.toggleTerminal"
+    }
+  ]
+  
+  
